@@ -22,3 +22,13 @@ var bob = Object.create(person);
 
 bob.changeName("Gary");
 console.log(bob);
+
+function Person(name, age, favoriteFood, dislikes) {
+   this.name = name;
+   this.age = age;
+   this.favoriteFood = favoriteFood;
+   this.dislikes = dislikes;
+}
+
+var anton = new Person("Anton", 23, "Dark chocolate", "Freedom");
+console.log(anton);
