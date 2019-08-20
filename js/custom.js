@@ -50,5 +50,13 @@ class Person {
 }
 
 var tony = new Person("Greg", 19, "construction worker");
-console.log(tony.aboutPerson());
+let newGuy = tony.aboutPerson();
+// console.log(newGuy);
 
+const p = document.createElement('p');
+// p.id = 'person';
+p.innerHTML = newGuy;
+// p.appendChild(document.createTextNode(newGuy));
+document.querySelector('body').appendChild(p);
+
+console.log(p);
