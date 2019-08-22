@@ -45,7 +45,11 @@ class Person {
 
    aboutPerson = function() {
       return "My name is " + this.name + ", I am " + this.age +
-         " years old, and I am a " + this.job;
+         " years old, and I am a(n) " + this.job;
+   }
+
+   changeJob = function(newJob) {
+      this.job = newJob;
    }
 }
 
@@ -60,3 +64,10 @@ p.innerHTML = newGuy;
 document.querySelector('body').appendChild(p);
 
 console.log(p);
+
+// let differentJob = tony;
+tony.changeJob('accountant');
+let differentJob = tony.aboutPerson();
+const j = document.createElement('p');
+j.innerHTML = differentJob;
+document.querySelector('body').appendChild(j);
