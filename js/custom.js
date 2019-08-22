@@ -54,20 +54,34 @@ class Person {
 }
 
 var tony = new Person("Greg", 19, "construction worker");
-let newGuy = tony.aboutPerson();
-// console.log(newGuy);
-
 const p = document.createElement('p');
-// p.id = 'person';
-p.innerHTML = newGuy;
-// p.appendChild(document.createTextNode(newGuy));
+p.id = 'bob';
+p.appendChild(document.createTextNode(tony.aboutPerson()));
 document.querySelector('body').appendChild(p);
 
-console.log(p);
+document.getElementById('bob').style.color = 'red';
+// let newGuy = tony.aboutPerson();
+// // console.log(newGuy);
 
-// let differentJob = tony;
-tony.changeJob('accountant');
-let differentJob = tony.aboutPerson();
-const j = document.createElement('p');
-j.innerHTML = differentJob;
-document.querySelector('body').appendChild(j);
+// const p = document.createElement('p');
+// p.id = 'orig';
+// p.innerHTML = newGuy;
+// // p.appendChild(document.createTextNode(newGuy));
+// document.querySelector('body').appendChild(p);
+
+// // console.log(p);
+
+// // let differentJob = tony;
+// tony.changeJob('accountant');
+// let differentJob = tony.aboutPerson();
+// const j = document.createElement('p');
+// j.id = 'altJob';
+// j.innerHTML = differentJob;
+// document.querySelector('body').appendChild(j);
+
+// // console.log(j.id);
+// // console.log(p.id);
+
+// // document.querySelector('orig').style.color = 'red';
+// // document.querySelector('body altJob').style.color = 'green';
+// console.log(document.querySelector('orig'));
